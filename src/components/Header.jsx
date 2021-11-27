@@ -4,6 +4,7 @@ import download from "../assets/download.svg";
 import left from "../assets/forgroundleft.svg";
 import right from "../assets/foregroundRight.svg";
 import bg from "../assets/bg.svg";
+import Fade from "react-reveal/Fade";
 
 const Header = () => {
   return (
@@ -12,13 +13,15 @@ const Header = () => {
       <Bg src={bg} />
       <Imagine>
         <Text>
-          <h1>IMAGINE A PLACE...</h1>
-          <p>
-            ...where you can belong to a school club, a gaming group, or a
-            worldwide art community. Where just you and a handful of friends can
-            spend time together. A place that makes it easy to talk every day
-            and hang out more often.
-          </p>
+          <Fade bottom cascade>
+            <h1>IMAGINE A PLACE...</h1>
+            <p>
+              ...where you can belong to a school club, a gaming group, or a
+              worldwide art community. Where just you and a handful of friends
+              can spend time together. A place that makes it easy to talk every
+              day and hang out more often.
+            </p>
+          </Fade>
         </Text>
 
         <CTA>
