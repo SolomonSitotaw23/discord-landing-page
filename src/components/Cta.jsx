@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import download from "../assets/download copy.svg";
+import spark from "../assets/sparkles.svg";
 
 const Cta = () => {
   return (
     <Wrap>
+      <Spark src={spark} alt="" />
       <h1>Ready to start your journey?</h1>
       <Download>
         <img src={download} alt="" />
@@ -15,6 +17,8 @@ const Cta = () => {
 };
 
 export default Cta;
+
+const Spark = styled.img``;
 const Wrap = styled.div`
   display: flex;
   flex-direction: column;
@@ -22,7 +26,12 @@ const Wrap = styled.div`
   align-items: center;
   height: 284px;
   width: 100%;
-  font-weight: 300px;
+
+  background: #f6f6f6;
+  h1 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
 `;
 const Download = styled.button`
   display: flex;

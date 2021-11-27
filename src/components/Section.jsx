@@ -1,20 +1,23 @@
 import React from "react";
 import styled from "styled-components";
+import Fade from "react-reveal/Fade";
 
 const Section = ({ leftImg, title, text, rightImg, bgColor }) => {
   return (
-    <Wrap bgColor={bgColor}>
-      <LeftImg>
-        <LImg src={leftImg} alt="" />
-      </LeftImg>
-      <Text>
-        <h1>{title}</h1>
-        <p>{text}</p>
-      </Text>
-      <RightImg>
-        <RImg src={rightImg} alt="" />
-      </RightImg>
-    </Wrap>
+    <Fade bottom>
+      <Wrap bgColor={bgColor}>
+        <LeftImg>
+          <LImg src={leftImg} alt="" />
+        </LeftImg>
+        <Text>
+          <h1>{title}</h1>
+          <p>{text}</p>
+        </Text>
+        <RightImg>
+          <RImg src={rightImg} alt="" />
+        </RightImg>
+      </Wrap>
+    </Fade>
   );
 };
 

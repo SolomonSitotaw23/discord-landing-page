@@ -33,6 +33,7 @@ function App() {
       />
       <LastSec />
       <Cta />
+      <Footer />
     </div>
   );
 }
